@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our projects</title>
+    <style>
+        /* Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url("download.jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .blur-background {
+            backdrop-filter: blur(10px); /* Applies blur effect */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        /* Navigation Bar Styling */
+        .nav {
+            background: #1f1f56;
+            text-align: center;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            flex-wrap: wrap;
+        }
+
+        /* Navigation Links */
+        .nav a {
+            text-decoration: none;
+            color: #F8F8F8;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+            background: linear-gradient(to right, #23D5AB, #4A90E2);
+            box-shadow: 0 0 10px rgba(72, 239, 209, 0.3);
+        }
+
+        /* Hover Effect */
+        .nav a:hover {
+            background: linear-gradient(to right, #FF416C, #4A90E2);
+            box-shadow: 0 0 15px rgba(255, 65, 108, 0.5);
+            transform: scale(1.1);
+        }
+
+        /* Header Styling */
+        h1 {
+            margin-top: 20px;
+            color: #f8f3f3;
+        }
+        .text {
+            color: #f8f3f3;
+        }
+
+        /* Project Card Styling */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        .project-card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background-color: rgb(9, 4, 57);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        /* Project Card Hover */
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Project Image */
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 15px;
+        }
+
+        /* Button Styling */
+        .cta-btn {
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 8px 15px;
+            background: linear-gradient(to right, #23D5AB, #4A90E2);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: linear-gradient(to right, #FF416C, #4A90E2);
+            box-shadow: 0 0 20px rgba(255, 65, 108, 0.8);
+            transform: scale(1.1);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .projects {
+                padding: 10px;
+            }
+
+            .project-card {
+                width: 250px;
+                height: 350px;
+            }
+
+            .nav {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .nav a {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .projects {
+                gap: 10px;
+            }
+
+            .project-card {
+                width: 100%;
+                height: auto;
+            }
+
+            .nav a {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <a href="Home page.html">Home</a>
+        <a href="Service.html">Services</a>
+        <a href="project.html">Projects</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+    <h1>Completed Projects</h1>
+    <div class="projects">
+        <div class="project-card">
+            <img src="Digital Marketing.jpg" alt="Project 3">
+            <div class="project-info">
+                <h3 class="text">Project Alpha</h3>
+                <p class="text">Branding and design for a startup agency.</p>
+                <a href="project alpha.html" class="cta-btn">View Details</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="Discover What is Ecommerce_ A Comprehensive Guide to Online Business Essentials.jpg" alt="Project 2">
+            <div class="project-info">
+                <h3 class="text">Project Beta</h3>
+                <p class="text">Developed an e-commerce platform with custom features.</p>
+                <a href="project beta.html" class="cta-btn">View Details</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="Level - Financial Technology & Crypto WordPress Theme.jpg" alt="Project 1">
+            <div class="project-info">
+                <h3 class="text">Project Gamma</h3>
+                <p class="text">Website redesign for a leading tech company.</p>
+                <a href="project gamma.html" class="cta-btn">View Details</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

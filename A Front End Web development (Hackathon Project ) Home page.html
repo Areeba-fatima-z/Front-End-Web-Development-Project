@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Front End development project</title>
+    <style>
+        /* Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            font-family: sans-serif;
+            background: linear-gradient(135deg, #0d0d1a, #1e1e2e);
+            color: #f8f8f8;
+            text-align: center;  
+            background-image: url("Premium Vector _ Circuit board Motherboard_ Blue technology background.jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+
+
+        }
+        @media (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+}
+
+        .blur-background {
+        backdrop-filter: blur(10px); 
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+}
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 20px;
+        }
+        /*glitch effect for heading*/
+        .hero h1 {
+            font-size:50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #0ff;
+            position: relative;
+            animation: glitch 1.5s infinite alternate;
+        }
+
+        @keyframes glitch {
+            0% { text-shadow: -2px 2px #ff00ff, 2px -2px #00ffff; }
+            100% { text-shadow: 2px -2px #ff00ff, -2px 2px #00ffff; }
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .cta {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            background: linear-gradient(to right, #23D5AB, #4A90E2);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 15px rgba(35, 213, 171, 0.6);
+        }
+
+        .cta:hover {
+            background: linear-gradient(to right, #FF416C, #4A90E2);
+            box-shadow: 0 0 20px rgba(255, 65, 108, 0.8);
+            transform: scale(1.1);
+        }
+
+        
+    </style>
+</head>
+<body>
+<!--Home Page-->
+  
+<div class="hero">
+        <div class="bg-animation"></div>
+        <h1>Welcome to FutureTech</h1>
+        <p>We create innovative AI-driven solutions and software that drive business transformation.
+             Specializing in Web and App Development, AI Automation, and Next-Gen UI/UX design, we deliver
+              scalable, secure applications and intuitive user experiences. Our tailored solutions push the
+               boundaries of technology to accelerate growth and efficiency.</p>
+        <button class="cta" onclick="openPage()">Let's Build the Future</button>
+    </div>
+    <script>
+        function openPage() {
+            window.location.href = "Service.html"; 
+        }
+
+        
+       </script> 
+</body>
+
+</html>

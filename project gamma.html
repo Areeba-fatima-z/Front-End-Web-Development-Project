@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Redesign Project</title>
+    <style>
+        /* Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url("download.jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .blur-background {
+            backdrop-filter: blur(10px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgb(9, 4, 57);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            width: 90%; 
+        }
+        
+        h2 {
+            margin-top: 10px;
+            color: #f5f5f5;
+            font-size: 2rem; 
+        }
+        p {
+            color: #f9f7f7;
+            margin: 20px 20px;
+            font-size: 1.1rem; 
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin: 20px auto;
+        }
+        li {
+            margin: 10px 0;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .image img {
+            width: 100%; 
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        button {
+            background: linear-gradient(to right, #23D5AB, #4A90E2);
+            color: rgb(197, 196, 202);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem; 
+        }
+        button:hover {
+            background: linear-gradient(to right, #FF416C, #4A90E2);
+            box-shadow: 0 0 15px rgba(255, 65, 108, 0.5);
+            transform: scale(1.1);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%; 
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            button {
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 100%; 
+                padding: 15px; 
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            button {
+                font-size: 1rem;
+                padding: 8px 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blur-background"></div>
+    <div class="container">
+        <div class="image">
+            <img src="Level - Financial Technology & Crypto WordPress Theme.jpg" alt="Project Gamma">
+        </div>
+        <h2>Website Redesign for a Leading Tech Company</h2>
+        <p>
+            We partnered with a leading tech company to completely revamp
+        </p>
+        <p>their online presence, delivering a modern, responsive, and </p>
+        <p>high-performance website. The new design enhances user experience,</p>
+        <p>improves site navigation, and aligns with the company innovative vision.</p>
+        <button onclick="window.location.href='project.html';">Back</button>
+    </div>
+</body>
+</html>
